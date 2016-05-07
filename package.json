@@ -1,0 +1,24 @@
+{
+  "name": "postcode-nl",
+  "version": "0.0.1",
+  "description": "Postcode.nl API client for browser and node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomvlk/postcode-nl-js.git"
+  },
+  "keywords": [
+    "postcode.nl",
+    "postcode",
+    "api"
+  ],
+  "author": "Tom Valk <tomvalk@lt-box.info>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomvlk/postcode-nl-js/issues"
+  },
+  "homepage": "https://github.com/tomvlk/postcode-nl-js#readme"
+}
