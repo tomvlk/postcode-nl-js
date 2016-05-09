@@ -3,6 +3,11 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     browserify: {
+      options: {
+        browserifyOptions: {
+          debug: true
+        }
+      },
       dist: {
         options: {
           transform: [
@@ -17,8 +22,8 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ["./src/*.js"],
-        tasks: ["browserify"]
+        files: ['./src/*.js'],
+        tasks: ['browserify', 'babel']
       }
     },
 
@@ -29,8 +34,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          src: ['src/node/**.js'],
-          dest: 'lib'
+          cwd: 'src/',
+          src: ['*.js'],
+          dest: 'lib/'
         }]
       }
     }
